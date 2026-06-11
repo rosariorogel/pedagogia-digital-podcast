@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
+
+/* also Typeka */
+
+html {
+	border: 0.75em solid #7d9098;
+}
+
+body {
+	max-width: 53em;
+	font-family: "Poppins", sans-serif;
+	color: #333;
+	margin: 0 auto;
+	padding: 1em 1em 2em;
+}
+
+h1, h2, h3 {
+	font-family: "Antic Slab", serif;
+}
+
+h2 {
+	padding-top: 0em;
+}
+
+h3 {
+	padding-top: 1em;
+}
+
+a {
+	color: #7d2b41;
+	text-decoration: none;
+	border-bottom: 1px dotted #7d2b41;
+}
+
+a:hover {
+	color: #FFF;
+	background-color: #7d2b41;
+}
+
+/* header */
+
+header * {
+	margin: 0;
+	padding: 0;
+}
+
+h1 a, h2 a, h2 a:hover {
+	border: none;
+	background-color: #FFF;
+}
+
+h1 a:hover {
+	color: #FFF;
+	background-color: #FFF;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2em;
+}
+
+header img {
+	height: 3.5em;
+}
+
+header ul {
+	text-align: right;
+}
+
+header li {
+	display: inline-block;
+	padding-left: 1em;
+	vertical-align: middle;
+}
+
+header li.social a:hover {
+	background: none;
+}
+
+li.social + li.social {
+	padding-left: 0;
+}
+
+header li img {
+	height: 1.1em;
+	margin-bottom: -0.1em;
+}
+
+header a {
+	display: block;
+	padding: 0.2em;
+	border: none;
+}
+
+.current { /* currently selected nav item */
+	color: #FFF;
+	background-color: #7d2b41;
+}
+
+@media (max-width: 400px) {
+
+	header {
+		font-size: 1em;
+		justify-content: space-around;
+	}
+
+	header img {
+		height: 2em;
+	}
+
+}
+
+/* main */
+
+h2, h3 {
+	text-align: center;
+}
+
+h2 img {
+	display: block;
+	width: 60%;
+	margin: auto;
+}
+
+@media (max-width: 400px) {
+	h2 img {
+		width: 75%;
+	}
+
+	h2 {
+		font-size: 1.5em;
+		margin-top: 0.2em;
+		margin-bottom: 0.2em;
+	}
+}
+
+p {
+	line-height: 1.6em;
+	max-width: 40em;
+	margin: 1em auto;
+}
+
+audio {
+	display: block;
+	width: 80%;
+}
+
+.audiowrap {
+	max-width: 40em;
+	margin: auto;
+}
+
+#aired {
+	font-size: 0.8em;
+	text-align: center;
+	line-height: 2.2em;
+}
+
+#aired img {
+	vertical-align: middle;
+}
+
+/* aside is for Apple and Spotify links */
+aside ul {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+aside li {
+	display: inline;
+}
+
+aside a {
+	border: none;	
+}
+
+aside a:hover {
+	border: none;
+	background: none;
+}
+
+aside img {
+	height: 32px;
+}
+
+/* ends aside */
+
+footer {
+	margin-top: 3.5em;
+}
+
+footer * {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul {
+	line-height: 2em;
+}
+
+footer li {
+	display: inline-block;
+	padding: 0.5em 1em;
+	list-style-type: none;
+}
+
+footer img {
+	vertical-align: top;
+	height: 4em;
+}
+
+footer li:last-child img {
+	height: 3.2em;
+}
+
+footer p {
+	margin: 0.5em auto;
+	font-size: 0.77em;
+}
+
+
+/* home */
+
+#home main {
+	display: flex;
+	align-items: center;
+}
+
+#home main p {
+	font-size: 1.1em;
+	width: 38%;
+	padding-left: 1em;
+}
+
+@media (max-width: 700px) {
+	#home main {
+			display: block;
+	}
+	
+	#home main p {
+		width: 90%;
+	}
+}
+
+#home cite {
+	color: #246992;
+}
+
+#home h2 a {
+	color: #333;
+}
+
+#home h3 {
+	text-align: center;
+}
+
+#home main a {
+	display: block;
+	border: 0.375em solid #FFF;
+	background-color: #FFF;
+}
+
+#home main a:hover {
+	border-bottom-color: #efa841;
+	border-right-color: #efa841;
+}
+
+/* about */
+
+#about section h2 {
+	float: right;
+}
+
+@media (max-width: 700px) {
+	#about section h2 {
+		float: none;
+	}
+}
+
+/* season */
+
+#season main ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:  space-between;
+}
+
+#season main li {
+	display: block;
+	width: 30%;
+}
+
+@media (max-width: 700px) {
+	#season main li {
+		width: 50%;
+	}
+}
+
+@media (max-width: 450px) {
+	#season main li {
+		width: 100%;
+	}
+}
+
+#season main a {
+	display: block;
+	border: 0.375em solid #FFF;
+	background-color: #FFF;
+}
+
+#season main a:hover {
+	border-bottom-color: #efa841;
+	border-right-color: #efa841;
+}
+
+#season main img {
+	width: 100%;
+}

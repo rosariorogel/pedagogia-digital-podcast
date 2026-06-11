@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sample PodcaLst Web Template</title> 
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+</head>
+
+<body id="episode">
+
+<div>
+
+<header>
+	<!-- h1 is also a link to Home -->
+	<h1><a href="../"><img title="Sample Podcast Web Template" alt="logo for the site" src="../images/logo.png"></a></h1>
+
+	<nav>
+		<ul>
+			<li><a class="current" title="Season One aired 2019-2020" href="./">Season One</a></li>
+			<li><a title="Season Two is airing 2020-2021" href="../season2">Season Two</a></li>
+			<li><a title="About the Show" href="../about.html">About</a></li>
+			<li class="social"><a href="https://podcasts.apple.com" title="Listen on Apple Podcasts if you like!"><img alt="apple podcast logo" src="../images/apple_podcasts.png"></a></li>
+			<li class="social"><a href="https://open.spotify.com/" title="Listen on Spotify if that's more fun!"><img alt="spotify logo" src="../images/spotify.png"></a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- breadcrumb to show season/episode -->
+
+<main>
+
+<!-- ............................... single show -->
+
+<h2>Name of the episode<img alt="description of the episode picture" src="../images/sample_image.png"></h2>
+
+<div class="audiowrap">
+	<audio class="player" controls="controls">
+		  <source src="../audio/sample_episode.mp3" type="audio/mpeg" />
+		  Please download the <a href="../audio/sample_episode.mp3">source file</a> directly.
+	</audio> 
+</div>
+
+<p>Here is the description of the episode.  You could includes links to external media/references.  This description might be the same thing spoken in the show itself. </p>
+
+<p id="aired"><img alt="description of small logo" src="../images/logo_small.png"> Originally aired September 25, 2019</p>
+
+
+
+<!-- ............................... end single show -->
+
+</main>
+
+<footer>
+	<p> You may want to put some more logos here to credit supporters.</p>
+	<p> &copy; 2021 your podcast name here. </p>
+</footer>
+
+</div>
+
+<!-- custom audio player is from https://github.com/sampotts/plyr -->
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+<script> const players = Plyr.setup('.player', {title: 'Example Title', controls: ['play', 'progress', 'current-time', 'mute', 'volume'],}); </script>
+
+</body>
+</html>
